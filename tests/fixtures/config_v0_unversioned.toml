@@ -1,0 +1,3 @@
+# A configuration from before the `version` field existed.
+power_mode = "performance"
+theme = "black"

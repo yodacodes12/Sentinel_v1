@@ -1,0 +1,28 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Node / Vite
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+
+# Tauri
+apps/desktop/src-tauri/gen/
+apps/desktop/src-tauri/target/
+
+# Local development
+.env
+.env.*
+*.log
+*.db
+*.db-journal
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc

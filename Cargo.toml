@@ -1,0 +1,56 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "apps/cli", "apps/desktop/src-tauri", "tests"]
+# The Tauri shell (apps/desktop/src-tauri) needs the WebKitGTK development
+# packages, so it is a member but not a default member: plain `cargo build`
+# and `cargo test` work on machines without them.
+default-members = ["crates/*", "apps/cli", "tests"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89"
+publish = false
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.dependencies]
+sentinel-core = { path = "crates/sentinel-core" }
+sentinel-config = { path = "crates/sentinel-config" }
+sentinel-logging = { path = "crates/sentinel-logging" }
+sentinel-ipc = { path = "crates/sentinel-ipc" }
+sentinel-storage = { path = "crates/sentinel-storage" }
+sentinel-daemon = { path = "crates/sentinel-daemon" }
+sentinel-client = { path = "crates/sentinel-client" }
+sentinel-inventory = { path = "crates/sentinel-inventory" }
+sentinel-hardware = { path = "crates/sentinel-hardware" }
+sentinel-utilities = { path = "crates/sentinel-utilities" }
+sentinel-telemetry = { path = "crates/sentinel-telemetry" }
+sentinel-alerts = { path = "crates/sentinel-alerts" }
+sentinel-history = { path = "crates/sentinel-history" }
+sentinel-docs = { path = "crates/sentinel-docs" }
+
+clap = { version = "4.6", features = ["derive"] }
+rusqlite = { version = "0.43", features = ["bundled"] }
+rustix = { version = "1.1", features = ["process"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tempfile = "3.27"
+thiserror = "2.0"
+tokio = { version = "1.54", default-features = false, features = ["rt", "net", "io-util", "signal", "time", "macros", "sync"] }
+toml = "1.2"
+# Phase 6 document discovery only (crates/sentinel-docs/src/net.rs): HTTPS with
+# rustls/ring verified against the system trust store; no proxy, no cookies,
+# no compression.
+ureq = { version = "3.5", default-features = false, features = ["rustls-no-provider", "_ring", "platform-verifier"] }
+sha2 = "0.10"
+url = "2.5"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", default-features = false, features = ["std", "fmt", "json", "registry"] }
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+strip = true
+panic = "abort"

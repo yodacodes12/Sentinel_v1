@@ -1,0 +1,41 @@
+# Optional systemd *user* unit for the Sentinel daemon.
+#
+# Sentinel never installs, enables or starts this unit for you. If you want
+# systemd to manage the daemon, do it yourself, as your normal user:
+#
+#   mkdir -p ~/.config/systemd/user
+#   cp resources/systemd/sentinel.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user start sentinel      # run it now
+#   systemctl --user stop sentinel       # stop it
+#   systemctl --user enable sentinel     # only if you want it at every login
+#
+# Do not install this as a system unit and do not run it as root: the daemon
+# refuses to start as root.
+
+[Unit]
+Description=Sentinel system intelligence daemon (read-only observer)
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=simple
+# Adjust the path if sentineld is installed elsewhere.
+ExecStart=%h/.local/bin/sentineld --foreground
+# SIGTERM triggers the daemon's graceful shutdown.
+KillSignal=SIGTERM
+TimeoutStopSec=10
+# Deliberately no Restart=: stopping Sentinel must keep it stopped.
+Restart=no
+
+# Hardening. The daemon needs none of these privileges.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/.config/sentinel %h/.local/share/sentinel %h/.local/state/sentinel %h/.cache/sentinel %t/sentinel
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,29 @@
+[package]
+name = "sentinel-cli"
+description = "The Sentinel command-line interface"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "sentinel"
+path = "src/main.rs"
+
+[dependencies]
+sentinel-core.workspace = true
+sentinel-config.workspace = true
+sentinel-client.workspace = true
+sentinel-ipc.workspace = true
+sentinel-inventory.workspace = true
+sentinel-telemetry.workspace = true
+sentinel-docs.workspace = true
+serde.workspace = true
+clap.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

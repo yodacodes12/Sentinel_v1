@@ -1,0 +1,21 @@
+{
+  "name": "sentinel",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sentinel: Linux system intelligence hub (read-only by design)",
+  "workspaces": [
+    "apps/desktop"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/desktop",
+    "build": "npm run build -w apps/desktop",
+    "typecheck": "npm run typecheck -w apps/desktop",
+    "test": "npm run test -w apps/desktop",
+    "tauri": "npm run tauri -w apps/desktop --",
+    "desktop:dev": "cargo build -p sentinel-daemon -p sentinel-cli && npm run tauri -w apps/desktop -- dev",
+    "desktop:build": "cargo build --release -p sentinel-daemon -p sentinel-cli && npm run tauri -w apps/desktop -- build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,20 @@
+[package]
+name = "sentinel-utilities"
+description = "Read-only discovery of installed system utilities and services for Sentinel"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sentinel-inventory.workspace = true
+sentinel-hardware.workspace = true
+rusqlite.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
