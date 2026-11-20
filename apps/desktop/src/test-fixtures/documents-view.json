@@ -1,0 +1,855 @@
+{
+  "progress": {
+    "running": false,
+    "kind": null,
+    "stage": null,
+    "started_at": null,
+    "session_id": null,
+    "document_id": null,
+    "cancel_requested": false
+  },
+  "identity": {
+    "manufacturer": {
+      "original": "Dell Inc.",
+      "canonical": "Dell",
+      "key": "dell",
+      "recognised": true
+    },
+    "board_manufacturer": {
+      "original": "Dell Inc.",
+      "canonical": "Dell",
+      "key": "dell",
+      "recognised": true
+    },
+    "system_model": {
+      "original": "Inspiron 15 3535",
+      "key": "INSPIRON153535",
+      "tokens": [
+        "INSPIRON",
+        "15",
+        "3535"
+      ],
+      "source": "/sys/class/dmi/id/x"
+    },
+    "system_family": {
+      "original": "Inspiron",
+      "key": "INSPIRON",
+      "tokens": [
+        "INSPIRON"
+      ],
+      "source": "/sys/class/dmi/id/x"
+    },
+    "board_name": {
+      "original": "0N90HF",
+      "key": "0N90HF",
+      "tokens": [
+        "0N90HF"
+      ],
+      "source": "/sys/class/dmi/id/x"
+    },
+    "board_revision": {
+      "original": "A02",
+      "key": "A02",
+      "tokens": [
+        "A02"
+      ],
+      "source": "/sys/class/dmi/id/x"
+    },
+    "model_numbers": [
+      "15",
+      "3535"
+    ],
+    "completeness": "full",
+    "notes": [],
+    "identity_hash": "6015a2c6e7e978edfc5f7bf6a265db7a7f8d5a64d01ce7691b0e2d2f082d8f09",
+    "firmware_level": "board_identified"
+  },
+  "identity_problem": null,
+  "online": true,
+  "auto_download": false,
+  "providers": [
+    {
+      "id": "local_library",
+      "name": "local_library",
+      "category": "unknown",
+      "online": false,
+      "enabled": true,
+      "configured": true,
+      "description": ""
+    },
+    {
+      "id": "catalogue",
+      "name": "catalogue",
+      "category": "unknown",
+      "online": true,
+      "enabled": true,
+      "configured": true,
+      "description": ""
+    },
+    {
+      "id": "internet_archive",
+      "name": "internet_archive",
+      "category": "unknown",
+      "online": true,
+      "enabled": true,
+      "configured": true,
+      "description": ""
+    },
+    {
+      "id": "broken",
+      "name": "broken",
+      "category": "unknown",
+      "online": true,
+      "enabled": true,
+      "configured": true,
+      "description": ""
+    }
+  ],
+  "candidates": [
+    {
+      "id": 1,
+      "key": "library:0N90HF-A02.pdf",
+      "title": "Dell Inspiron 15 3535 schematic 0N90HF rev A02",
+      "filename": null,
+      "extension": null,
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "schematic",
+      "format": "pdf",
+      "format_basis": "content",
+      "source": {
+        "provider_id": "local_library",
+        "provider_name": "local_library",
+        "source_name": "Your document library",
+        "domain": null,
+        "page_url": null,
+        "document_url": null,
+        "category": "user_library",
+        "trust": "user_provided",
+        "trust_reason": "You added this file to Sentinel's document library. Sentinel does not know where it came from.",
+        "access": {
+          "state": "local_file"
+        },
+        "usage_note": null
+      },
+      "assessment": {
+        "class": "exact",
+        "evidence": [
+          {
+            "signal": "manufacturer",
+            "effect": "supports",
+            "location": "title",
+            "detected": "Dell Inc.",
+            "found": "Dell",
+            "weight": 2,
+            "note": "Names the detected manufacturer."
+          },
+          {
+            "signal": "system_model",
+            "effect": "supports",
+            "location": "title",
+            "detected": "Inspiron 15 3535",
+            "found": "Inspiron 15 3535",
+            "weight": 6,
+            "note": "Names the exact system model."
+          },
+          {
+            "signal": "model_number",
+            "effect": "supports",
+            "location": "title",
+            "detected": "3535",
+            "found": "3535",
+            "weight": 3,
+            "note": "Contains the model number 3535 as a whole word."
+          },
+          {
+            "signal": "family",
+            "effect": "supports",
+            "location": "title",
+            "detected": "INSPIRON",
+            "found": "INSPIRON",
+            "weight": 1,
+            "note": "Names the product family."
+          },
+          {
+            "signal": "board_identifier",
+            "effect": "supports",
+            "location": "title",
+            "detected": "0N90HF",
+            "found": "0N90HF",
+            "weight": 6,
+            "note": "Contains the board identifier as a whole word."
+          },
+          {
+            "signal": "revision",
+            "effect": "supports",
+            "location": "title",
+            "detected": "A02",
+            "found": "A02",
+            "weight": 2,
+            "note": "States board revision A02."
+          }
+        ],
+        "support_points": 20,
+        "contradiction_points": 0,
+        "missing": [],
+        "revision": "matches",
+        "explanation": "The model or board identifier and the board revision match, and nothing contradicts them. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": false
+      },
+      "retrieval": {
+        "state": "in_library",
+        "file": "0N90HF-A02.pdf",
+        "size_bytes": 2048
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {}
+    },
+    {
+      "id": 2,
+      "key": "https://dl.dell.com/manuals/inspiron-15-3535-owners-manual.pdf",
+      "title": "Inspiron 15 3535 Owner's Manual",
+      "filename": "inspiron-15-3535-owners-manual.pdf",
+      "extension": "pdf",
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "service_manual",
+      "format": "pdf",
+      "format_basis": "extension",
+      "source": {
+        "provider_id": "catalogue",
+        "provider_name": "catalogue",
+        "source_name": "Dell",
+        "domain": "dl.dell.com",
+        "page_url": null,
+        "document_url": "https://dl.dell.com/manuals/inspiron-15-3535-owners-manual.pdf",
+        "category": "manufacturer",
+        "trust": "official_this_manufacturer",
+        "trust_reason": "Served from dl.dell.com, a Dell domain. This says who published it, not which board it is for.",
+        "access": {
+          "state": "downloadable"
+        },
+        "usage_note": "Published by Dell. Download only for your own reference; check the manufacturer's terms before sharing it."
+      },
+      "assessment": {
+        "class": "high_confidence",
+        "evidence": [
+          {
+            "signal": "manufacturer",
+            "effect": "supports",
+            "location": "host",
+            "detected": "Dell Inc.",
+            "found": "dl.dell.com",
+            "weight": 2,
+            "note": "Published on dl.dell.com, the manufacturer's own site."
+          },
+          {
+            "signal": "system_model",
+            "effect": "supports",
+            "location": "title",
+            "detected": "Inspiron 15 3535",
+            "found": "Inspiron 15 3535",
+            "weight": 6,
+            "note": "Names the exact system model."
+          },
+          {
+            "signal": "model_number",
+            "effect": "supports",
+            "location": "title",
+            "detected": "3535",
+            "found": "3535",
+            "weight": 3,
+            "note": "Contains the model number 3535 as a whole word."
+          },
+          {
+            "signal": "family",
+            "effect": "supports",
+            "location": "title",
+            "detected": "INSPIRON",
+            "found": "INSPIRON",
+            "weight": 1,
+            "note": "Names the product family."
+          }
+        ],
+        "support_points": 12,
+        "contradiction_points": 0,
+        "missing": [
+          "board revision (the document does not state one)"
+        ],
+        "revision": "document_unspecified",
+        "explanation": "The model or board identifier matches; the document does not state a board revision. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": true
+      },
+      "retrieval": {
+        "state": "not_downloaded"
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {
+        "found_by_queries": "q"
+      }
+    },
+    {
+      "id": 3,
+      "key": "https://archive.org/details/inspiron-15-3535-sm",
+      "title": "Inspiron 15 3535 service manual scan",
+      "filename": null,
+      "extension": null,
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "service_manual",
+      "format": "web_page",
+      "format_basis": "unknown",
+      "source": {
+        "provider_id": "internet_archive",
+        "provider_name": "internet_archive",
+        "source_name": "Internet Archive",
+        "domain": "archive.org",
+        "page_url": "https://archive.org/details/inspiron-15-3535-sm",
+        "document_url": null,
+        "category": "community",
+        "trust": "community",
+        "trust_reason": "Hosted on Internet Archive (archive.org), where anyone can upload. Sentinel cannot verify who published it or whether it may be shared.",
+        "access": {
+          "state": "reference_only",
+          "reason": "Community upload with unverified rights: Sentinel keeps the reference only. Open the source page to review it and its terms."
+        },
+        "usage_note": "Rights to this document are not verified."
+      },
+      "assessment": {
+        "class": "high_confidence",
+        "evidence": [
+          {
+            "signal": "system_model",
+            "effect": "supports",
+            "location": "title",
+            "detected": "Inspiron 15 3535",
+            "found": "Inspiron 15 3535",
+            "weight": 6,
+            "note": "Names the exact system model."
+          },
+          {
+            "signal": "model_number",
+            "effect": "supports",
+            "location": "title",
+            "detected": "3535",
+            "found": "3535",
+            "weight": 3,
+            "note": "Contains the model number 3535 as a whole word."
+          },
+          {
+            "signal": "family",
+            "effect": "supports",
+            "location": "title",
+            "detected": "INSPIRON",
+            "found": "INSPIRON",
+            "weight": 1,
+            "note": "Names the product family."
+          }
+        ],
+        "support_points": 10,
+        "contradiction_points": 0,
+        "missing": [
+          "board revision (the document does not state one)"
+        ],
+        "revision": "document_unspecified",
+        "explanation": "The model or board identifier matches; the document does not state a board revision. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": true
+      },
+      "retrieval": {
+        "state": "reference_only",
+        "reason": "Community upload with unverified rights: Sentinel keeps the reference only. Open the source page to review it and its terms."
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {
+        "listed_by": "Internet Archive"
+      }
+    },
+    {
+      "id": 4,
+      "key": "https://docs.example.org/3530.pdf",
+      "title": "Dell Inspiron 15 3530 schematic",
+      "filename": "3530.pdf",
+      "extension": "pdf",
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "schematic",
+      "format": "pdf",
+      "format_basis": "extension",
+      "source": {
+        "provider_id": "catalogue",
+        "provider_name": "catalogue",
+        "source_name": "docs.example.org",
+        "domain": "docs.example.org",
+        "page_url": null,
+        "document_url": "https://docs.example.org/3530.pdf",
+        "category": "unknown",
+        "trust": "unverified",
+        "trust_reason": "docs.example.org is not a known manufacturer or community site.",
+        "access": {
+          "state": "reference_only",
+          "reason": "Unknown source: Sentinel keeps the reference only."
+        },
+        "usage_note": null
+      },
+      "assessment": {
+        "class": "related_model",
+        "evidence": [
+          {
+            "signal": "manufacturer",
+            "effect": "supports",
+            "location": "title",
+            "detected": "Dell Inc.",
+            "found": "Dell",
+            "weight": 2,
+            "note": "Names the detected manufacturer."
+          },
+          {
+            "signal": "family",
+            "effect": "supports",
+            "location": "title",
+            "detected": "INSPIRON",
+            "found": "INSPIRON",
+            "weight": 1,
+            "note": "Names the product family."
+          },
+          {
+            "signal": "other_model_number",
+            "effect": "contradicts",
+            "location": "title",
+            "detected": "3535",
+            "found": "3530",
+            "weight": 5,
+            "note": "Names model 3530, not 3535."
+          }
+        ],
+        "support_points": 3,
+        "contradiction_points": 5,
+        "missing": [
+          "board revision (the document does not state one)"
+        ],
+        "revision": "not_applicable",
+        "explanation": "It is for another model of the same family. Similar models are not necessarily electrically compatible. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": true
+      },
+      "retrieval": {
+        "state": "reference_only",
+        "reason": "Unknown source: Sentinel keeps the reference only."
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {
+        "found_by_queries": "q"
+      }
+    },
+    {
+      "id": 5,
+      "key": "https://docs.example.org/0N90HF-A00.pdf",
+      "title": "Dell Inspiron 15 3535 0N90HF schematic rev A00",
+      "filename": "0N90HF-A00.pdf",
+      "extension": "pdf",
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "schematic",
+      "format": "pdf",
+      "format_basis": "extension",
+      "source": {
+        "provider_id": "catalogue",
+        "provider_name": "catalogue",
+        "source_name": "docs.example.org",
+        "domain": "docs.example.org",
+        "page_url": null,
+        "document_url": "https://docs.example.org/0N90HF-A00.pdf",
+        "category": "unknown",
+        "trust": "unverified",
+        "trust_reason": "docs.example.org is not a known manufacturer or community site.",
+        "access": {
+          "state": "reference_only",
+          "reason": "Unknown source: Sentinel keeps the reference only."
+        },
+        "usage_note": null
+      },
+      "assessment": {
+        "class": "related_model",
+        "evidence": [
+          {
+            "signal": "manufacturer",
+            "effect": "supports",
+            "location": "title",
+            "detected": "Dell Inc.",
+            "found": "Dell",
+            "weight": 2,
+            "note": "Names the detected manufacturer."
+          },
+          {
+            "signal": "system_model",
+            "effect": "supports",
+            "location": "title",
+            "detected": "Inspiron 15 3535",
+            "found": "Inspiron 15 3535",
+            "weight": 6,
+            "note": "Names the exact system model."
+          },
+          {
+            "signal": "model_number",
+            "effect": "supports",
+            "location": "title",
+            "detected": "3535",
+            "found": "3535",
+            "weight": 3,
+            "note": "Contains the model number 3535 as a whole word."
+          },
+          {
+            "signal": "family",
+            "effect": "supports",
+            "location": "title",
+            "detected": "INSPIRON",
+            "found": "INSPIRON",
+            "weight": 1,
+            "note": "Names the product family."
+          },
+          {
+            "signal": "board_identifier",
+            "effect": "supports",
+            "location": "title",
+            "detected": "0N90HF",
+            "found": "0N90HF",
+            "weight": 6,
+            "note": "Contains the board identifier as a whole word."
+          },
+          {
+            "signal": "other_revision",
+            "effect": "contradicts",
+            "location": "title",
+            "detected": "A02",
+            "found": "A00",
+            "weight": 3,
+            "note": "States board revision A00, not A02."
+          }
+        ],
+        "support_points": 18,
+        "contradiction_points": 3,
+        "missing": [],
+        "revision": "conflicts",
+        "explanation": "Same model, but the document is for a different board revision, which may differ electrically. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": true
+      },
+      "retrieval": {
+        "state": "reference_only",
+        "reason": "Unknown source: Sentinel keeps the reference only."
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {
+        "found_by_queries": "q"
+      }
+    },
+    {
+      "id": 6,
+      "key": "https://docs.example.org/notes.pdf",
+      "title": "3535 board notes",
+      "filename": "notes.pdf",
+      "extension": "pdf",
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "unknown",
+      "format": "pdf",
+      "format_basis": "extension",
+      "source": {
+        "provider_id": "catalogue",
+        "provider_name": "catalogue",
+        "source_name": "docs.example.org",
+        "domain": "docs.example.org",
+        "page_url": null,
+        "document_url": "https://docs.example.org/notes.pdf",
+        "category": "unknown",
+        "trust": "unverified",
+        "trust_reason": "docs.example.org is not a known manufacturer or community site.",
+        "access": {
+          "state": "reference_only",
+          "reason": "Unknown source: Sentinel keeps the reference only."
+        },
+        "usage_note": null
+      },
+      "assessment": {
+        "class": "possible",
+        "evidence": [
+          {
+            "signal": "model_number",
+            "effect": "supports",
+            "location": "title",
+            "detected": "3535",
+            "found": "3535",
+            "weight": 3,
+            "note": "Contains the model number 3535 as a whole word."
+          }
+        ],
+        "support_points": 3,
+        "contradiction_points": 0,
+        "missing": [
+          "board revision (the document does not state one)"
+        ],
+        "revision": "not_applicable",
+        "explanation": "Some identifiers match, but not enough to establish that it is for this model. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": true
+      },
+      "retrieval": {
+        "state": "reference_only",
+        "reason": "Unknown source: Sentinel keeps the reference only."
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {
+        "found_by_queries": "q"
+      }
+    },
+    {
+      "id": 7,
+      "key": "https://docs.example.org/collection.zip",
+      "title": "Laptop schematic collection",
+      "filename": "collection.zip",
+      "extension": "zip",
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "schematic",
+      "format": "zip",
+      "format_basis": "extension",
+      "source": {
+        "provider_id": "catalogue",
+        "provider_name": "catalogue",
+        "source_name": "docs.example.org",
+        "domain": "docs.example.org",
+        "page_url": null,
+        "document_url": "https://docs.example.org/collection.zip",
+        "category": "unknown",
+        "trust": "unverified",
+        "trust_reason": "docs.example.org is not a known manufacturer or community site.",
+        "access": {
+          "state": "reference_only",
+          "reason": "Unknown source: Sentinel keeps the reference only."
+        },
+        "usage_note": null
+      },
+      "assessment": {
+        "class": "unverified",
+        "evidence": [],
+        "support_points": 0,
+        "contradiction_points": 0,
+        "missing": [
+          "board revision (the document does not state one)"
+        ],
+        "revision": "not_applicable",
+        "explanation": "Nothing in the document's title, name or metadata identifies its hardware. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": true
+      },
+      "retrieval": {
+        "state": "reference_only",
+        "reason": "Unknown source: Sentinel keeps the reference only."
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {
+        "found_by_queries": "q"
+      }
+    },
+    {
+      "id": 8,
+      "key": "https://download.lenovo.com/t480_hmm.pdf",
+      "title": "Lenovo ThinkPad T480 Hardware Maintenance Manual",
+      "filename": "t480_hmm.pdf",
+      "extension": "pdf",
+      "mime_type": null,
+      "size_bytes": null,
+      "doc_type": "service_manual",
+      "format": "pdf",
+      "format_basis": "extension",
+      "source": {
+        "provider_id": "catalogue",
+        "provider_name": "catalogue",
+        "source_name": "Lenovo",
+        "domain": "download.lenovo.com",
+        "page_url": null,
+        "document_url": "https://download.lenovo.com/t480_hmm.pdf",
+        "category": "manufacturer",
+        "trust": "official_other_manufacturer",
+        "trust_reason": "Served from download.lenovo.com, a Lenovo domain, not the detected manufacturer's.",
+        "access": {
+          "state": "reference_only",
+          "reason": "The document is for different hardware."
+        },
+        "usage_note": "Published by Lenovo. Download only for your own reference; check the manufacturer's terms before sharing it."
+      },
+      "assessment": {
+        "class": "mismatch",
+        "evidence": [
+          {
+            "signal": "other_manufacturer",
+            "effect": "contradicts",
+            "location": "host",
+            "detected": "Dell Inc.",
+            "found": "download.lenovo.com",
+            "weight": 5,
+            "note": "Published on download.lenovo.com, a Lenovo site: documents there describe Lenovo hardware."
+          }
+        ],
+        "support_points": 0,
+        "contradiction_points": 5,
+        "missing": [
+          "board revision (the document does not state one)"
+        ],
+        "revision": "not_applicable",
+        "explanation": "The evidence indicates it is for different hardware. Sentinel compared names and metadata only, not the document's contents.",
+        "manual_verification_recommended": true
+      },
+      "retrieval": {
+        "state": "reference_only",
+        "reason": "The document is for different hardware."
+      },
+      "discovered_at": 1800000000,
+      "verified_at": 1800000000,
+      "metadata": {
+        "found_by_queries": "q"
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "id": 1,
+      "identity_hash": "6015a2c6e7e978edfc5f7bf6a265db7a7f8d5a64d01ce7691b0e2d2f082d8f09",
+      "started_at": 1800000000,
+      "finished_at": 1800000009,
+      "status": "partial",
+      "online": true,
+      "queries": [
+        {
+          "text": "Dell Inspiron 15 3535 schematic",
+          "purpose": "schematic",
+          "basis": [
+            "manufacturer",
+            "system_model"
+          ]
+        },
+        {
+          "text": "Dell Inspiron 15 3535 boardview",
+          "purpose": "boardview",
+          "basis": [
+            "manufacturer",
+            "system_model"
+          ]
+        },
+        {
+          "text": "Dell Inspiron 15 3535 service manual",
+          "purpose": "service_manual",
+          "basis": [
+            "manufacturer",
+            "system_model"
+          ]
+        },
+        {
+          "text": "Dell Inspiron 15 3535 technical specifications",
+          "purpose": "official",
+          "basis": [
+            "manufacturer",
+            "system_model"
+          ]
+        },
+        {
+          "text": "Dell Inspiron 15 3535",
+          "purpose": "identity",
+          "basis": [
+            "manufacturer",
+            "system_model"
+          ]
+        },
+        {
+          "text": "Inspiron 15 3535",
+          "purpose": "identity",
+          "basis": [
+            "system_model"
+          ]
+        },
+        {
+          "text": "Dell 0N90HF schematic",
+          "purpose": "schematic",
+          "basis": [
+            "board_manufacturer",
+            "board_name"
+          ]
+        },
+        {
+          "text": "Dell 0N90HF boardview",
+          "purpose": "boardview",
+          "basis": [
+            "board_manufacturer",
+            "board_name"
+          ]
+        },
+        {
+          "text": "Dell 0N90HF",
+          "purpose": "identity",
+          "basis": [
+            "board_manufacturer",
+            "board_name"
+          ]
+        },
+        {
+          "text": "Dell 0N90HF rev A02",
+          "purpose": "revision",
+          "basis": [
+            "board_manufacturer",
+            "board_name",
+            "board_revision"
+          ]
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "local_library",
+          "provider_name": "local_library",
+          "state": "ok",
+          "results": 1,
+          "requests": 0,
+          "duration_ms": 0,
+          "error": null
+        },
+        {
+          "provider_id": "catalogue",
+          "provider_name": "catalogue",
+          "state": "ok",
+          "results": 6,
+          "requests": 0,
+          "duration_ms": 0,
+          "error": null
+        },
+        {
+          "provider_id": "internet_archive",
+          "provider_name": "internet_archive",
+          "state": "ok",
+          "results": 1,
+          "requests": 0,
+          "duration_ms": 0,
+          "error": null
+        },
+        {
+          "provider_id": "broken",
+          "provider_name": "broken",
+          "state": "failed",
+          "results": 0,
+          "requests": 0,
+          "duration_ms": 0,
+          "error": "the request timed out"
+        }
+      ],
+      "candidates": 8,
+      "error": "broken: the request timed out"
+    }
+  ],
+  "last_search_at": 1800000009,
+  "cache_expires_at": 1801209609,
+  "storage_available": true,
+  "library_dir": "/home/user/.local/share/sentinel/documents/library",
+  "download_dir": "/home/user/.local/share/sentinel/documents/downloads",
+  "notice": "8 document(s) found: 1 exact, 2 high-confidence."
+}

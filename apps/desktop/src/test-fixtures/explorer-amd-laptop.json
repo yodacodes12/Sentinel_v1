@@ -1,0 +1,5463 @@
+{
+  "components": {
+    "components": [
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/core:0",
+          "cpu:0/core:1",
+          "cpu:0/core:2",
+          "cpu:0/core:3",
+          "cpu:0/core:4",
+          "cpu:0/core:5",
+          "cpu:0/core:6",
+          "cpu:0/core:7",
+          "cpu:0/cache:l1-data-0",
+          "cpu:0/cache:l1-data-1",
+          "cpu:0/cache:l1-data-2",
+          "cpu:0/cache:l1-data-3",
+          "cpu:0/cache:l1-data-4",
+          "cpu:0/cache:l1-data-5",
+          "cpu:0/cache:l1-data-6",
+          "cpu:0/cache:l1-data-7",
+          "cpu:0/cache:l1-instruction-0",
+          "cpu:0/cache:l1-instruction-1",
+          "cpu:0/cache:l1-instruction-2",
+          "cpu:0/cache:l1-instruction-3",
+          "cpu:0/cache:l1-instruction-4",
+          "cpu:0/cache:l1-instruction-5",
+          "cpu:0/cache:l1-instruction-6",
+          "cpu:0/cache:l1-instruction-7",
+          "cpu:0/cache:l2-unified-0",
+          "cpu:0/cache:l2-unified-1",
+          "cpu:0/cache:l2-unified-2",
+          "cpu:0/cache:l2-unified-3",
+          "cpu:0/cache:l2-unified-4",
+          "cpu:0/cache:l2-unified-5",
+          "cpu:0/cache:l2-unified-6",
+          "cpu:0/cache:l2-unified-7",
+          "cpu:0/cache:l3-unified-0"
+        ],
+        "id": "cpu:0",
+        "key": "0",
+        "kind": "cpu_package",
+        "links": [],
+        "name": "Example AMD 8-Core Processor",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "source": "cpu_total"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:0",
+          "cpu:0/cpu:1"
+        ],
+        "id": "cpu:0/core:0",
+        "key": "0",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-0",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-0",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-0",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 0",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 0,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 1,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:0",
+        "key": "0",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 0",
+        "parent": "cpu:0/core:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 0,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:1",
+        "key": "1",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 1",
+        "parent": "cpu:0/core:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 1,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:2",
+          "cpu:0/cpu:3"
+        ],
+        "id": "cpu:0/core:1",
+        "key": "1",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-1",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-1",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-1",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 1",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 2,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 3,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:2",
+        "key": "2",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 2",
+        "parent": "cpu:0/core:1",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 2,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:3",
+        "key": "3",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 3",
+        "parent": "cpu:0/core:1",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 3,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:4",
+          "cpu:0/cpu:5"
+        ],
+        "id": "cpu:0/core:2",
+        "key": "2",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-2",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-2",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-2",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 2",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 4,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 5,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:4",
+        "key": "4",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 4",
+        "parent": "cpu:0/core:2",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 4,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:5",
+        "key": "5",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 5",
+        "parent": "cpu:0/core:2",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 5,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:6",
+          "cpu:0/cpu:7"
+        ],
+        "id": "cpu:0/core:3",
+        "key": "3",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-3",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-3",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-3",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 3",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 6,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 7,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:6",
+        "key": "6",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 6",
+        "parent": "cpu:0/core:3",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 6,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:7",
+        "key": "7",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 7",
+        "parent": "cpu:0/core:3",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 7,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:8",
+          "cpu:0/cpu:9"
+        ],
+        "id": "cpu:0/core:4",
+        "key": "4",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-4",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-4",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-4",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 4",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 8,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 9,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:8",
+        "key": "8",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 8",
+        "parent": "cpu:0/core:4",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 8,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:9",
+        "key": "9",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 9",
+        "parent": "cpu:0/core:4",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 9,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:10",
+          "cpu:0/cpu:11"
+        ],
+        "id": "cpu:0/core:5",
+        "key": "5",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-5",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-5",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-5",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 5",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 10,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 11,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:10",
+        "key": "10",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 10",
+        "parent": "cpu:0/core:5",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 10,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:11",
+        "key": "11",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 11",
+        "parent": "cpu:0/core:5",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 11,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:12",
+          "cpu:0/cpu:13"
+        ],
+        "id": "cpu:0/core:6",
+        "key": "6",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-6",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-6",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-6",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 6",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 12,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 13,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:12",
+        "key": "12",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 12",
+        "parent": "cpu:0/core:6",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 12,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:13",
+        "key": "13",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 13",
+        "parent": "cpu:0/core:6",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 13,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [
+          "cpu:0/cpu:14",
+          "cpu:0/cpu:15"
+        ],
+        "id": "cpu:0/core:7",
+        "key": "7",
+        "kind": "cpu_core",
+        "links": [
+          {
+            "id": "cpu:0/cache:l1-data-7",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l1-instruction-7",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l2-unified-7",
+            "relation": "cache"
+          },
+          {
+            "id": "cpu:0/cache:l3-unified-0",
+            "relation": "cache"
+          }
+        ],
+        "name": "Core 7",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 14,
+            "source": "logical_cpu"
+          },
+          {
+            "cpu": 15,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:14",
+        "key": "14",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 14",
+        "parent": "cpu:0/core:7",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 14,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cpu:15",
+        "key": "15",
+        "kind": "logical_cpu",
+        "links": [],
+        "name": "CPU 15",
+        "parent": "cpu:0/core:7",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "cpu": 15,
+            "source": "logical_cpu"
+          }
+        ]
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-0",
+        "key": "1:data:0",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:0",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 0",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-1",
+        "key": "1:data:1",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:1",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 1",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-2",
+        "key": "1:data:2",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:2",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 2",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-3",
+        "key": "1:data:3",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:3",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 3",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-4",
+        "key": "1:data:4",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:4",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 4",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-5",
+        "key": "1:data:5",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:5",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 5",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-6",
+        "key": "1:data:6",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:6",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 6",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-data-7",
+        "key": "1:data:7",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:7",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 data cache 7",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-0",
+        "key": "1:instruction:0",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:0",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 0",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-1",
+        "key": "1:instruction:1",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:1",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 1",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-2",
+        "key": "1:instruction:2",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:2",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 2",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-3",
+        "key": "1:instruction:3",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:3",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 3",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-4",
+        "key": "1:instruction:4",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:4",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 4",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-5",
+        "key": "1:instruction:5",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:5",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 5",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-6",
+        "key": "1:instruction:6",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:6",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 6",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l1-instruction-7",
+        "key": "1:instruction:7",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:7",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L1 instruction cache 7",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-0",
+        "key": "2:unified:0",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:0",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 0",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-1",
+        "key": "2:unified:1",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:1",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 1",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-2",
+        "key": "2:unified:2",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:2",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 2",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-3",
+        "key": "2:unified:3",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:3",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 3",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-4",
+        "key": "2:unified:4",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:4",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 4",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-5",
+        "key": "2:unified:5",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:5",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 5",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-6",
+        "key": "2:unified:6",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:6",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 6",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l2-unified-7",
+        "key": "2:unified:7",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:7",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L2 cache 7",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "processor",
+        "children": [],
+        "id": "cpu:0/cache:l3-unified-0",
+        "key": "3:unified:0",
+        "kind": "cache",
+        "links": [
+          {
+            "id": "cpu:0/core:0",
+            "relation": "shared_by"
+          },
+          {
+            "id": "cpu:0/core:1",
+            "relation": "shared_by"
+          },
+          {
+            "id": "cpu:0/core:2",
+            "relation": "shared_by"
+          },
+          {
+            "id": "cpu:0/core:3",
+            "relation": "shared_by"
+          },
+          {
+            "id": "cpu:0/core:4",
+            "relation": "shared_by"
+          },
+          {
+            "id": "cpu:0/core:5",
+            "relation": "shared_by"
+          },
+          {
+            "id": "cpu:0/core:6",
+            "relation": "shared_by"
+          },
+          {
+            "id": "cpu:0/core:7",
+            "relation": "shared_by"
+          }
+        ],
+        "name": "L3 cache",
+        "parent": "cpu:0",
+        "parent_basis": "kernel_topology",
+        "telemetry": []
+      },
+      {
+        "category": "memory",
+        "children": [],
+        "id": "memory",
+        "key": "memory",
+        "kind": "memory",
+        "links": [],
+        "name": "System memory",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "source": "memory"
+          }
+        ]
+      },
+      {
+        "category": "graphics",
+        "children": [],
+        "id": "gpu:0000:03:00.0",
+        "key": "0000:03:00.0",
+        "kind": "gpu",
+        "links": [
+          {
+            "id": "pci:0000:03:00.0",
+            "relation": "pci_function"
+          }
+        ],
+        "name": "Example Integrated GPU",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "pci_address": "0000:03:00.0",
+            "source": "gpu"
+          }
+        ]
+      },
+      {
+        "category": "storage",
+        "children": [],
+        "id": "storage:loop1",
+        "key": "loop1",
+        "kind": "virtual_block",
+        "links": [],
+        "name": "loop1",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "device": "/dev/loop1",
+            "source": "filesystem"
+          }
+        ]
+      },
+      {
+        "category": "storage",
+        "children": [
+          "storage:nvme0n1p1",
+          "storage:nvme0n1p2"
+        ],
+        "id": "storage:nvme0n1",
+        "key": "nvme0n1",
+        "kind": "disk",
+        "links": [
+          {
+            "id": "pci:0000:01:00.0",
+            "relation": "controller"
+          }
+        ],
+        "name": "Example NVMe 512GB",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "name": "nvme0n1",
+            "source": "disk"
+          },
+          {
+            "device": "/dev/nvme0n1",
+            "source": "filesystem"
+          }
+        ]
+      },
+      {
+        "category": "storage",
+        "children": [],
+        "id": "storage:nvme0n1p1",
+        "key": "nvme0n1p1",
+        "kind": "partition",
+        "links": [],
+        "name": "nvme0n1p1 (partition 1)",
+        "parent": "storage:nvme0n1",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "device": "/dev/nvme0n1p1",
+            "source": "filesystem"
+          }
+        ]
+      },
+      {
+        "category": "storage",
+        "children": [
+          "storage:dm-0"
+        ],
+        "id": "storage:nvme0n1p2",
+        "key": "nvme0n1p2",
+        "kind": "partition",
+        "links": [
+          {
+            "id": "storage:dm-0",
+            "relation": "used_by"
+          }
+        ],
+        "name": "nvme0n1p2 (partition 2)",
+        "parent": "storage:nvme0n1",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "device": "/dev/nvme0n1p2",
+            "source": "filesystem"
+          }
+        ]
+      },
+      {
+        "category": "storage",
+        "children": [],
+        "id": "storage:dm-0",
+        "key": "dm-0",
+        "kind": "virtual_block",
+        "links": [
+          {
+            "id": "storage:nvme0n1p2",
+            "relation": "built_on"
+          }
+        ],
+        "name": "dm-0 (cryptroot)",
+        "parent": "storage:nvme0n1p2",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "device": "/dev/dm-0",
+            "source": "filesystem"
+          },
+          {
+            "device": "/dev/mapper/cryptroot",
+            "source": "filesystem"
+          }
+        ]
+      },
+      {
+        "category": "storage",
+        "children": [
+          "storage:sda1"
+        ],
+        "id": "storage:sda",
+        "key": "sda",
+        "kind": "disk",
+        "links": [
+          {
+            "id": "pci:0000:03:00.3",
+            "relation": "controller"
+          }
+        ],
+        "name": "Example Flash",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "name": "sda",
+            "source": "disk"
+          },
+          {
+            "device": "/dev/sda",
+            "source": "filesystem"
+          }
+        ]
+      },
+      {
+        "category": "storage",
+        "children": [],
+        "id": "storage:sda1",
+        "key": "sda1",
+        "kind": "partition",
+        "links": [],
+        "name": "sda1 (partition 1)",
+        "parent": "storage:sda",
+        "parent_basis": "kernel_topology",
+        "telemetry": [
+          {
+            "device": "/dev/sda1",
+            "source": "filesystem"
+          }
+        ]
+      },
+      {
+        "category": "battery",
+        "children": [],
+        "id": "battery:BAT0",
+        "key": "BAT0",
+        "kind": "battery",
+        "links": [],
+        "name": "BAT0 (EXB-BATT)",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "name": "BAT0",
+            "source": "battery"
+          }
+        ]
+      },
+      {
+        "category": "battery",
+        "children": [],
+        "id": "power:AC",
+        "key": "AC",
+        "kind": "power_supply",
+        "links": [],
+        "name": "AC",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": []
+      },
+      {
+        "category": "network",
+        "children": [],
+        "id": "net:docker0",
+        "key": "docker0",
+        "kind": "network_interface",
+        "links": [],
+        "name": "docker0",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "name": "docker0",
+            "source": "network_interface"
+          }
+        ]
+      },
+      {
+        "category": "network",
+        "children": [],
+        "id": "net:lo",
+        "key": "lo",
+        "kind": "network_interface",
+        "links": [],
+        "name": "lo",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "name": "lo",
+            "source": "network_interface"
+          }
+        ]
+      },
+      {
+        "category": "network",
+        "children": [],
+        "id": "net:wlan0",
+        "key": "wlan0",
+        "kind": "network_interface",
+        "links": [
+          {
+            "id": "pci:0000:02:00.0",
+            "relation": "pci_function"
+          }
+        ],
+        "name": "wlan0",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": [
+          {
+            "name": "wlan0",
+            "source": "network_interface"
+          }
+        ]
+      },
+      {
+        "category": "usb",
+        "children": [
+          "usb:1-1"
+        ],
+        "id": "usb:usb1",
+        "key": "usb1",
+        "kind": "usb_root_hub",
+        "links": [
+          {
+            "id": "pci:0000:03:00.3",
+            "relation": "controller"
+          }
+        ],
+        "name": "usb1 · xHCI Host Controller",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": []
+      },
+      {
+        "category": "usb",
+        "children": [],
+        "id": "usb:1-1",
+        "key": "1-1",
+        "kind": "usb_device",
+        "links": [],
+        "name": "Example Flash",
+        "parent": "usb:usb1",
+        "parent_basis": "bus_topology",
+        "telemetry": []
+      },
+      {
+        "category": "pci",
+        "children": [],
+        "id": "pci:0000:01:00.0",
+        "key": "0000:01:00.0",
+        "kind": "pci_device",
+        "links": [],
+        "name": "Example NVMe Controller",
+        "parent": null,
+        "parent_basis": "parent_not_found",
+        "telemetry": []
+      },
+      {
+        "category": "pci",
+        "children": [],
+        "id": "pci:0000:02:00.0",
+        "key": "0000:02:00.0",
+        "kind": "pci_device",
+        "links": [],
+        "name": "Network controller",
+        "parent": null,
+        "parent_basis": "parent_not_found",
+        "telemetry": []
+      },
+      {
+        "category": "pci",
+        "children": [],
+        "id": "pci:0000:03:00.0",
+        "key": "0000:03:00.0",
+        "kind": "pci_device",
+        "links": [],
+        "name": "Example Integrated GPU",
+        "parent": null,
+        "parent_basis": "parent_not_found",
+        "telemetry": []
+      },
+      {
+        "category": "pci",
+        "children": [],
+        "id": "pci:0000:03:00.3",
+        "key": "0000:03:00.3",
+        "kind": "pci_device",
+        "links": [],
+        "name": "USB controller",
+        "parent": null,
+        "parent_basis": "parent_not_found",
+        "telemetry": []
+      },
+      {
+        "category": "pci",
+        "children": [],
+        "id": "pci:0000:03:00.5",
+        "key": "0000:03:00.5",
+        "kind": "pci_device",
+        "links": [],
+        "name": "Example Platform Function",
+        "parent": null,
+        "parent_basis": "parent_not_found",
+        "telemetry": []
+      },
+      {
+        "category": "motherboard",
+        "children": [],
+        "id": "board",
+        "key": "board",
+        "kind": "board",
+        "links": [],
+        "name": "EXB14-A",
+        "parent": null,
+        "parent_basis": "root",
+        "telemetry": []
+      }
+    ],
+    "inventory_discovered_at": 1800000000,
+    "version": 1
+  },
+  "inventory": {
+    "batteries": [
+      {
+        "capacity_level": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/class/power_supply/BAT0/capacity_level"
+        },
+        "capacity_percent": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/capacity",
+          "value": 77
+        },
+        "charge_full_design_uah": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/class/power_supply/BAT0/charge_full_design"
+        },
+        "charge_full_uah": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/class/power_supply/BAT0/charge_full"
+        },
+        "charge_now_uah": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/class/power_supply/BAT0/charge_now"
+        },
+        "current_now_ua": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/class/power_supply/BAT0/current_now"
+        },
+        "cycle_count": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/cycle_count",
+          "value": 120
+        },
+        "discovered_at": 1800000000,
+        "energy_full_design_uwh": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/energy_full_design",
+          "value": 56000000
+        },
+        "energy_full_uwh": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/energy_full",
+          "value": 50000000
+        },
+        "energy_now_uwh": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/energy_now",
+          "value": 38000000
+        },
+        "health_percent": {
+          "availability": "detected",
+          "confidence": "derived",
+          "notes": "full capacity divided by design capacity at scan time",
+          "source": "/sys/class/power_supply/BAT0",
+          "value": 89.3
+        },
+        "manufacturer": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/class/power_supply/BAT0/manufacturer",
+          "value": "ExampleCell"
+        },
+        "model_name": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/class/power_supply/BAT0/model_name",
+          "value": "EXB-BATT"
+        },
+        "name": "BAT0",
+        "power_now_uw": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/power_now",
+          "value": 7500000
+        },
+        "present": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/present",
+          "value": true
+        },
+        "scope": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/scope",
+          "value": "System"
+        },
+        "status": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/status",
+          "value": "discharging"
+        },
+        "technology": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/technology",
+          "value": "Li-ion"
+        },
+        "voltage_min_design_uv": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/class/power_supply/BAT0/voltage_min_design"
+        },
+        "voltage_now_uv": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/BAT0/voltage_now",
+          "value": 11800000
+        }
+      }
+    ],
+    "discovered_at": 1800000000,
+    "discovery_status": [
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 1,
+        "module": "system_identity",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 1,
+        "module": "firmware",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 1,
+        "module": "cpu",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 1,
+        "module": "memory",
+        "notes": [
+          "Installed RAM, memory type, speed and modules are not available to this user."
+        ],
+        "outcome": "partial"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 1,
+        "module": "motherboard",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 1,
+        "module": "gpu",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 4,
+        "module": "storage",
+        "notes": [
+          "1 unused virtual block device(s) skipped"
+        ],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 2,
+        "module": "battery",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 3,
+        "module": "network",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 2,
+        "module": "usb",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 5,
+        "module": "pci",
+        "notes": [],
+        "outcome": "completed"
+      },
+      {
+        "duration_ms": 0,
+        "finished_at": 1800000000,
+        "items": 4,
+        "module": "sensors",
+        "notes": [],
+        "outcome": "completed"
+      }
+    ],
+    "duration_ms": 0,
+    "fingerprint": {
+      "inputs": [
+        "manufacturer",
+        "product",
+        "board_manufacturer",
+        "board_name",
+        "board_revision",
+        "cpu_model",
+        "pci_device_ids"
+      ],
+      "value": "8682490c874da111",
+      "version": 1
+    },
+    "firmware": {
+      "bios_release_date": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/bios_date",
+        "value": "01/02/2026"
+      },
+      "bios_revision": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/bios_release",
+        "value": "1.2"
+      },
+      "bios_vendor": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/bios_vendor",
+        "value": "Example BIOS Co"
+      },
+      "bios_version": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/bios_version",
+        "value": "1.2.3"
+      },
+      "boot_mode": {
+        "availability": "detected",
+        "confidence": "kernel_reported",
+        "source": "/sys/firmware/efi",
+        "value": "uefi"
+      },
+      "discovered_at": 1800000000,
+      "embedded_controller_revision": {
+        "availability": "unsupported",
+        "confidence": "unknown",
+        "notes": "not provided by this system",
+        "source": "/sys/class/dmi/id/ec_firmware_release"
+      }
+    },
+    "graphics": [
+      {
+        "boot_display": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/bus/pci/devices/0000:03:00.0/boot_vga",
+          "value": true
+        },
+        "device_id": 5688,
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/pci/devices/0000:03:00.0/driver",
+          "value": "amdgpu"
+        },
+        "drm_nodes": [
+          "card0",
+          "renderD128"
+        ],
+        "kind": {
+          "availability": "detected",
+          "confidence": "inferred",
+          "notes": "shares its PCI slot with AMD platform functions, as an APU's integrated GPU does",
+          "source": "PCI identity and placement",
+          "value": "integrated"
+        },
+        "memory": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "notes": "system RAM reserved for the integrated GPU, not separate memory",
+          "source": "/sys/bus/pci/devices/0000:03:00.0/mem_info_vram_total",
+          "value": {
+            "bytes": 536870912,
+            "kind": "reserved_system_memory"
+          }
+        },
+        "model_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example Integrated GPU"
+        },
+        "pci_address": "0000:03:00.0",
+        "revision": 1,
+        "subsystem_device_id": 22136,
+        "subsystem_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example Laptop Subsystem"
+        },
+        "subsystem_vendor_id": 4660,
+        "vendor_id": 4098,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example GPU Vendor A"
+        }
+      }
+    ],
+    "memory": {
+      "discovered_at": 1800000000,
+      "installed_bytes": {
+        "availability": "unsupported",
+        "confidence": "unknown",
+        "notes": "installed RAM: firmware memory records are not provided by this system",
+        "source": "/sys/firmware/dmi/entries/17-0/raw"
+      },
+      "kernel_physical_bytes": {
+        "availability": "detected",
+        "confidence": "kernel_reported",
+        "notes": "online memory blocks; excludes memory reserved by firmware",
+        "source": "/sys/devices/system/memory",
+        "value": 17179869184
+      },
+      "memory_type": {
+        "availability": "unsupported",
+        "confidence": "unknown",
+        "notes": "memory type: firmware memory records are not provided by this system",
+        "source": "/sys/firmware/dmi/entries/17-0/raw"
+      },
+      "modules": {
+        "availability": "unsupported",
+        "confidence": "unknown",
+        "notes": "modules: firmware memory records are not provided by this system",
+        "source": "/sys/firmware/dmi/entries/17-0/raw"
+      },
+      "numa_nodes": [],
+      "slots_populated": {
+        "availability": "unsupported",
+        "confidence": "unknown",
+        "notes": "populated slots: firmware memory records are not provided by this system",
+        "source": "/sys/firmware/dmi/entries/17-0/raw"
+      },
+      "slots_total": {
+        "availability": "unsupported",
+        "confidence": "unknown",
+        "notes": "slots: firmware memory records are not provided by this system",
+        "source": "/sys/firmware/dmi/entries/17-0/raw"
+      },
+      "snapshot": {
+        "available_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/meminfo",
+          "value": 9216000000
+        },
+        "cached_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/meminfo",
+          "value": 2304000000
+        },
+        "free_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/meminfo",
+          "value": 4608000000
+        },
+        "used_bytes": {
+          "availability": "detected",
+          "confidence": "derived",
+          "notes": "MemTotal minus MemAvailable at scan time",
+          "source": "/proc/meminfo",
+          "value": 6890127360
+        }
+      },
+      "speed_mts": {
+        "availability": "unsupported",
+        "confidence": "unknown",
+        "notes": "memory speed: firmware memory records are not provided by this system",
+        "source": "/sys/firmware/dmi/entries/17-0/raw"
+      },
+      "swap_total_bytes": {
+        "availability": "detected",
+        "confidence": "kernel_reported",
+        "source": "/proc/meminfo",
+        "value": 4294967296
+      },
+      "usable_bytes": {
+        "availability": "detected",
+        "confidence": "kernel_reported",
+        "source": "/proc/meminfo",
+        "value": 16106127360
+      }
+    },
+    "motherboard": {
+      "bios_release_date": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/bios_date",
+        "value": "01/02/2026"
+      },
+      "bios_vendor": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/bios_vendor",
+        "value": "Example BIOS Co"
+      },
+      "bios_version": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/bios_version",
+        "value": "1.2.3"
+      },
+      "board_manufacturer": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/board_vendor",
+        "value": "Example Corp"
+      },
+      "board_name": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/board_name",
+        "value": "EXB14-A"
+      },
+      "board_revision": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "notes": "as reported by firmware; not verified against documentation",
+        "source": "/sys/class/dmi/id/board_version",
+        "value": "A01"
+      },
+      "discovered_at": 1800000000,
+      "identification": {
+        "explanation": "Board manufacturer and board name were reported by firmware (SMBIOS). They have not been checked against manufacturer documentation.",
+        "externally_verified": false,
+        "level": "board_identified"
+      },
+      "system_family": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/product_family",
+        "value": "Example Series"
+      },
+      "system_manufacturer": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/sys_vendor",
+        "value": "Example Corp"
+      },
+      "system_model": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/product_name",
+        "value": "Example Book 14 AMD"
+      },
+      "system_sku": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/product_sku",
+        "value": "EX-SKU-1"
+      }
+    },
+    "network": [
+      {
+        "carrier": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/docker0/carrier",
+          "value": true
+        },
+        "device_bus": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "software interface"
+        },
+        "device_id": null,
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "unavailable",
+          "confidence": "unknown"
+        },
+        "kind": "bridge",
+        "mac_address": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/docker0/address",
+          "value": "02:42:00:00:00:01"
+        },
+        "mac_address_origin": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/docker0/addr_assign_type",
+          "value": "permanent"
+        },
+        "mtu": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/docker0/mtu",
+          "value": 1500
+        },
+        "name": "docker0",
+        "operational_state": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/docker0/operstate",
+          "value": "up"
+        },
+        "speed_mbps": {
+          "availability": "unavailable",
+          "confidence": "unknown",
+          "notes": "the driver reports no link speed (link down, or not an Ethernet device)",
+          "source": "/sys/class/net/docker0/speed"
+        },
+        "vendor_id": null,
+        "wireless_phy": null
+      },
+      {
+        "carrier": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/lo/carrier",
+          "value": true
+        },
+        "device_bus": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "software interface"
+        },
+        "device_id": null,
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "unavailable",
+          "confidence": "unknown"
+        },
+        "kind": "loopback",
+        "mac_address": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "loopback has no hardware address"
+        },
+        "mac_address_origin": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/lo/addr_assign_type",
+          "value": "permanent"
+        },
+        "mtu": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/lo/mtu",
+          "value": 1500
+        },
+        "name": "lo",
+        "operational_state": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/lo/operstate",
+          "value": "up"
+        },
+        "speed_mbps": {
+          "availability": "unavailable",
+          "confidence": "unknown",
+          "notes": "the driver reports no link speed (link down, or not an Ethernet device)",
+          "source": "/sys/class/net/lo/speed"
+        },
+        "vendor_id": null,
+        "wireless_phy": null
+      },
+      {
+        "carrier": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/wlan0/carrier",
+          "value": true
+        },
+        "device_bus": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/wlan0/device",
+          "value": "PCI 0000:02:00.0"
+        },
+        "device_id": 10021,
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/wlan0/device/driver",
+          "value": "iwlwifi"
+        },
+        "kind": "wireless",
+        "mac_address": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/wlan0/address",
+          "value": "02:11:22:33:44:55"
+        },
+        "mac_address_origin": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/wlan0/addr_assign_type",
+          "value": "permanent"
+        },
+        "mtu": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/wlan0/mtu",
+          "value": 1500
+        },
+        "name": "wlan0",
+        "operational_state": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/net/wlan0/operstate",
+          "value": "up"
+        },
+        "speed_mbps": {
+          "availability": "unavailable",
+          "confidence": "unknown",
+          "notes": "the driver reports no link speed (link down, or not an Ethernet device)",
+          "source": "/sys/class/net/wlan0/speed"
+        },
+        "vendor_id": 32902,
+        "wireless_phy": null
+      }
+    ],
+    "pci_devices": [
+      {
+        "address": "0000:01:00.0",
+        "class_code": 67586,
+        "class_name": "Non-Volatile memory controller",
+        "device_id": 43016,
+        "device_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example NVMe Controller"
+        },
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/pci/devices/0000:01:00.0/driver",
+          "value": "nvme"
+        },
+        "parent": "0000:00:02.4",
+        "revision": 1,
+        "role": "storage_controller",
+        "subsystem_device_id": 43009,
+        "subsystem_vendor_id": 5197,
+        "vendor_id": 5197,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example SSD Vendor"
+        }
+      },
+      {
+        "address": "0000:02:00.0",
+        "class_code": 163840,
+        "class_name": "Network controller",
+        "device_id": 10021,
+        "device_name": {
+          "availability": "unknown",
+          "confidence": "unknown",
+          "notes": "this ID is not in the installed database",
+          "source": "/usr/share/hwdata/pci.ids"
+        },
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/pci/devices/0000:02:00.0/driver",
+          "value": "iwlwifi"
+        },
+        "parent": "0000:00:02.3",
+        "revision": 1,
+        "role": "network",
+        "subsystem_device_id": 36,
+        "subsystem_vendor_id": 32902,
+        "vendor_id": 32902,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example Intel-like Vendor"
+        }
+      },
+      {
+        "address": "0000:03:00.0",
+        "class_code": 196608,
+        "class_name": "VGA compatible controller",
+        "device_id": 5688,
+        "device_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example Integrated GPU"
+        },
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/pci/devices/0000:03:00.0/driver",
+          "value": "amdgpu"
+        },
+        "parent": "0000:00:08.1",
+        "revision": 1,
+        "role": "graphics",
+        "subsystem_device_id": 22136,
+        "subsystem_vendor_id": 4660,
+        "vendor_id": 4098,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example GPU Vendor A"
+        }
+      },
+      {
+        "address": "0000:03:00.3",
+        "class_code": 787248,
+        "class_name": "USB controller",
+        "device_id": 5600,
+        "device_name": {
+          "availability": "unknown",
+          "confidence": "unknown",
+          "notes": "this ID is not in the installed database",
+          "source": "/usr/share/hwdata/pci.ids"
+        },
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/pci/devices/0000:03:00.3/driver",
+          "value": "xhci_hcd"
+        },
+        "parent": "0000:00:08.1",
+        "revision": 1,
+        "role": "usb_controller",
+        "subsystem_device_id": 22136,
+        "subsystem_vendor_id": 4660,
+        "vendor_id": 4130,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example AMD-like Vendor"
+        }
+      },
+      {
+        "address": "0000:03:00.5",
+        "class_code": 294912,
+        "class_name": "Multimedia controller",
+        "device_id": 5602,
+        "device_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example Platform Function"
+        },
+        "discovered_at": 1800000000,
+        "driver": {
+          "availability": "unavailable",
+          "confidence": "unknown",
+          "notes": "no kernel driver is bound",
+          "source": "/sys/bus/pci/devices/0000:03:00.5"
+        },
+        "parent": "0000:00:08.1",
+        "revision": 1,
+        "role": "audio",
+        "subsystem_device_id": 22136,
+        "subsystem_vendor_id": 4660,
+        "vendor_id": 4130,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/pci.ids",
+          "value": "Example AMD-like Vendor"
+        }
+      }
+    ],
+    "power_supplies": [
+      {
+        "discovered_at": 1800000000,
+        "kind": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/AC/type",
+          "value": "Mains"
+        },
+        "name": "AC",
+        "online": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/power_supply/AC/online",
+          "value": false
+        }
+      }
+    ],
+    "processors": [
+      {
+        "architecture": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/sys/kernel/arch",
+          "value": "x86_64"
+        },
+        "caches": [
+          {
+            "instance_cpus": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                12,
+                13
+              ],
+              [
+                14,
+                15
+              ]
+            ],
+            "instances": 8,
+            "kind": "data",
+            "level": 1,
+            "shared_by": [
+              0,
+              1
+            ],
+            "size_bytes": 49152
+          },
+          {
+            "instance_cpus": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                12,
+                13
+              ],
+              [
+                14,
+                15
+              ]
+            ],
+            "instances": 8,
+            "kind": "instruction",
+            "level": 1,
+            "shared_by": [
+              0,
+              1
+            ],
+            "size_bytes": 32768
+          },
+          {
+            "instance_cpus": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                12,
+                13
+              ],
+              [
+                14,
+                15
+              ]
+            ],
+            "instances": 8,
+            "kind": "unified",
+            "level": 2,
+            "shared_by": [
+              0,
+              1
+            ],
+            "size_bytes": 1310720
+          },
+          {
+            "instance_cpus": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209,
+                210,
+                211,
+                212,
+                213,
+                214,
+                215,
+                216,
+                217,
+                218,
+                219,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236,
+                237,
+                238,
+                239,
+                240,
+                241,
+                242,
+                243,
+                244,
+                245,
+                246,
+                247,
+                248,
+                249,
+                250,
+                251,
+                252,
+                253,
+                254,
+                255,
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268,
+                269,
+                270,
+                271,
+                272,
+                273,
+                274,
+                275,
+                276,
+                277,
+                278,
+                279,
+                280,
+                281,
+                282,
+                283,
+                284,
+                285,
+                286,
+                287,
+                288,
+                289,
+                290,
+                291,
+                292,
+                293,
+                294,
+                295,
+                296,
+                297,
+                298,
+                299,
+                300,
+                301,
+                302,
+                303,
+                304,
+                305,
+                306,
+                307,
+                308,
+                309,
+                310,
+                311,
+                312,
+                313,
+                314,
+                315,
+                316,
+                317,
+                318,
+                319,
+                320,
+                321,
+                322,
+                323,
+                324,
+                325,
+                326,
+                327,
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346,
+                347,
+                348,
+                349,
+                350,
+                351,
+                352,
+                353,
+                354,
+                355,
+                356,
+                357,
+                358,
+                359,
+                360,
+                361,
+                362,
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373,
+                374,
+                375,
+                376,
+                377,
+                378,
+                379,
+                380,
+                381,
+                382,
+                383,
+                384,
+                385,
+                386,
+                387,
+                388,
+                389,
+                390,
+                391,
+                392,
+                393,
+                394,
+                395,
+                396,
+                397,
+                398,
+                399,
+                400,
+                401,
+                402,
+                403,
+                404,
+                405,
+                406,
+                407,
+                408,
+                409,
+                410,
+                411,
+                412,
+                413,
+                414,
+                415,
+                416,
+                417,
+                418,
+                419,
+                420,
+                421,
+                422,
+                423,
+                424,
+                425,
+                426,
+                427,
+                428,
+                429,
+                430,
+                431,
+                432,
+                433,
+                434,
+                435,
+                436,
+                437,
+                438,
+                439,
+                440,
+                441,
+                442,
+                443,
+                444,
+                445,
+                446,
+                447,
+                448,
+                449,
+                450,
+                451,
+                452,
+                453,
+                454,
+                455,
+                456,
+                457,
+                458,
+                459,
+                460,
+                461,
+                462,
+                463,
+                464,
+                465,
+                466,
+                467,
+                468,
+                469,
+                470,
+                471,
+                472,
+                473,
+                474,
+                475,
+                476,
+                477,
+                478,
+                479,
+                480,
+                481,
+                482,
+                483,
+                484,
+                485,
+                486,
+                487,
+                488,
+                489,
+                490,
+                491,
+                492,
+                493,
+                494,
+                495,
+                496,
+                497,
+                498,
+                499,
+                500,
+                501,
+                502,
+                503,
+                504,
+                505,
+                506,
+                507,
+                508,
+                509,
+                510,
+                511,
+                512,
+                513,
+                514,
+                515,
+                516,
+                517,
+                518,
+                519,
+                520,
+                521,
+                522,
+                523,
+                524,
+                525,
+                526,
+                527,
+                528,
+                529,
+                530,
+                531,
+                532,
+                533,
+                534,
+                535,
+                536,
+                537,
+                538,
+                539,
+                540,
+                541,
+                542,
+                543,
+                544,
+                545,
+                546,
+                547,
+                548,
+                549,
+                550,
+                551,
+                552,
+                553,
+                554,
+                555,
+                556,
+                557,
+                558,
+                559,
+                560,
+                561,
+                562,
+                563,
+                564,
+                565,
+                566,
+                567,
+                568,
+                569,
+                570,
+                571,
+                572,
+                573,
+                574,
+                575,
+                576,
+                577,
+                578,
+                579,
+                580,
+                581,
+                582,
+                583,
+                584,
+                585,
+                586,
+                587,
+                588,
+                589,
+                590,
+                591,
+                592,
+                593,
+                594,
+                595,
+                596,
+                597,
+                598,
+                599,
+                600,
+                601,
+                602,
+                603,
+                604,
+                605,
+                606,
+                607,
+                608,
+                609,
+                610,
+                611,
+                612,
+                613,
+                614,
+                615,
+                616,
+                617,
+                618,
+                619,
+                620,
+                621,
+                622,
+                623,
+                624,
+                625,
+                626,
+                627,
+                628,
+                629,
+                630,
+                631,
+                632,
+                633,
+                634,
+                635,
+                636,
+                637,
+                638,
+                639,
+                640,
+                641,
+                642,
+                643,
+                644,
+                645,
+                646,
+                647,
+                648,
+                649,
+                650,
+                651,
+                652,
+                653,
+                654,
+                655,
+                656,
+                657,
+                658,
+                659,
+                660,
+                661,
+                662,
+                663,
+                664,
+                665,
+                666,
+                667,
+                668,
+                669,
+                670,
+                671,
+                672,
+                673,
+                674,
+                675,
+                676,
+                677,
+                678,
+                679,
+                680,
+                681,
+                682,
+                683,
+                684,
+                685,
+                686,
+                687,
+                688,
+                689,
+                690,
+                691,
+                692,
+                693,
+                694,
+                695,
+                696,
+                697,
+                698,
+                699,
+                700,
+                701,
+                702,
+                703,
+                704,
+                705,
+                706,
+                707,
+                708,
+                709,
+                710,
+                711,
+                712,
+                713,
+                714,
+                715,
+                716,
+                717,
+                718,
+                719,
+                720,
+                721,
+                722,
+                723,
+                724,
+                725,
+                726,
+                727,
+                728,
+                729,
+                730,
+                731,
+                732,
+                733,
+                734,
+                735,
+                736,
+                737,
+                738,
+                739,
+                740,
+                741,
+                742,
+                743,
+                744,
+                745,
+                746,
+                747,
+                748,
+                749,
+                750,
+                751,
+                752,
+                753,
+                754,
+                755,
+                756,
+                757,
+                758,
+                759,
+                760,
+                761,
+                762,
+                763,
+                764,
+                765,
+                766,
+                767,
+                768,
+                769,
+                770,
+                771,
+                772,
+                773,
+                774,
+                775,
+                776,
+                777,
+                778,
+                779,
+                780,
+                781,
+                782,
+                783,
+                784,
+                785,
+                786,
+                787,
+                788,
+                789,
+                790,
+                791,
+                792,
+                793,
+                794,
+                795,
+                796,
+                797,
+                798,
+                799,
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819,
+                820,
+                821,
+                822,
+                823,
+                824,
+                825,
+                826,
+                827,
+                828,
+                829,
+                830,
+                831,
+                832,
+                833,
+                834,
+                835,
+                836,
+                837,
+                838,
+                839,
+                840,
+                841,
+                842,
+                843,
+                844,
+                845,
+                846,
+                847,
+                848,
+                849,
+                850,
+                851,
+                852,
+                853,
+                854,
+                855,
+                856,
+                857,
+                858,
+                859,
+                860,
+                861,
+                862,
+                863,
+                864,
+                865,
+                866,
+                867,
+                868,
+                869,
+                870,
+                871,
+                872,
+                873,
+                874,
+                875,
+                876,
+                877,
+                878,
+                879,
+                880,
+                881,
+                882,
+                883,
+                884,
+                885,
+                886,
+                887,
+                888,
+                889,
+                890,
+                891,
+                892,
+                893,
+                894,
+                895,
+                896,
+                897,
+                898,
+                899,
+                900,
+                901,
+                902,
+                903,
+                904,
+                905,
+                906,
+                907,
+                908,
+                909,
+                910,
+                911,
+                912,
+                913,
+                914,
+                915,
+                916,
+                917,
+                918,
+                919,
+                920,
+                921,
+                922,
+                923,
+                924,
+                925,
+                926,
+                927,
+                928,
+                929,
+                930,
+                931,
+                932,
+                933,
+                934,
+                935,
+                936,
+                937,
+                938,
+                939,
+                940,
+                941,
+                942,
+                943,
+                944,
+                945,
+                946,
+                947,
+                948,
+                949,
+                950,
+                951,
+                952,
+                953,
+                954,
+                955,
+                956,
+                957,
+                958,
+                959,
+                960,
+                961,
+                962,
+                963,
+                964,
+                965,
+                966,
+                967,
+                968,
+                969,
+                970,
+                971,
+                972,
+                973,
+                974,
+                975,
+                976,
+                977,
+                978,
+                979,
+                980,
+                981,
+                982,
+                983,
+                984,
+                985,
+                986,
+                987,
+                988,
+                989,
+                990,
+                991,
+                992,
+                993,
+                994,
+                995,
+                996,
+                997,
+                998,
+                999
+              ]
+            ],
+            "instances": 1,
+            "kind": "unified",
+            "level": 3,
+            "shared_by": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84,
+              85,
+              86,
+              87,
+              88,
+              89,
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99,
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135,
+              136,
+              137,
+              138,
+              139,
+              140,
+              141,
+              142,
+              143,
+              144,
+              145,
+              146,
+              147,
+              148,
+              149,
+              150,
+              151,
+              152,
+              153,
+              154,
+              155,
+              156,
+              157,
+              158,
+              159,
+              160,
+              161,
+              162,
+              163,
+              164,
+              165,
+              166,
+              167,
+              168,
+              169,
+              170,
+              171,
+              172,
+              173,
+              174,
+              175,
+              176,
+              177,
+              178,
+              179,
+              180,
+              181,
+              182,
+              183,
+              184,
+              185,
+              186,
+              187,
+              188,
+              189,
+              190,
+              191,
+              192,
+              193,
+              194,
+              195,
+              196,
+              197,
+              198,
+              199,
+              200,
+              201,
+              202,
+              203,
+              204,
+              205,
+              206,
+              207,
+              208,
+              209,
+              210,
+              211,
+              212,
+              213,
+              214,
+              215,
+              216,
+              217,
+              218,
+              219,
+              220,
+              221,
+              222,
+              223,
+              224,
+              225,
+              226,
+              227,
+              228,
+              229,
+              230,
+              231,
+              232,
+              233,
+              234,
+              235,
+              236,
+              237,
+              238,
+              239,
+              240,
+              241,
+              242,
+              243,
+              244,
+              245,
+              246,
+              247,
+              248,
+              249,
+              250,
+              251,
+              252,
+              253,
+              254,
+              255,
+              256,
+              257,
+              258,
+              259,
+              260,
+              261,
+              262,
+              263,
+              264,
+              265,
+              266,
+              267,
+              268,
+              269,
+              270,
+              271,
+              272,
+              273,
+              274,
+              275,
+              276,
+              277,
+              278,
+              279,
+              280,
+              281,
+              282,
+              283,
+              284,
+              285,
+              286,
+              287,
+              288,
+              289,
+              290,
+              291,
+              292,
+              293,
+              294,
+              295,
+              296,
+              297,
+              298,
+              299,
+              300,
+              301,
+              302,
+              303,
+              304,
+              305,
+              306,
+              307,
+              308,
+              309,
+              310,
+              311,
+              312,
+              313,
+              314,
+              315,
+              316,
+              317,
+              318,
+              319,
+              320,
+              321,
+              322,
+              323,
+              324,
+              325,
+              326,
+              327,
+              328,
+              329,
+              330,
+              331,
+              332,
+              333,
+              334,
+              335,
+              336,
+              337,
+              338,
+              339,
+              340,
+              341,
+              342,
+              343,
+              344,
+              345,
+              346,
+              347,
+              348,
+              349,
+              350,
+              351,
+              352,
+              353,
+              354,
+              355,
+              356,
+              357,
+              358,
+              359,
+              360,
+              361,
+              362,
+              363,
+              364,
+              365,
+              366,
+              367,
+              368,
+              369,
+              370,
+              371,
+              372,
+              373,
+              374,
+              375,
+              376,
+              377,
+              378,
+              379,
+              380,
+              381,
+              382,
+              383,
+              384,
+              385,
+              386,
+              387,
+              388,
+              389,
+              390,
+              391,
+              392,
+              393,
+              394,
+              395,
+              396,
+              397,
+              398,
+              399,
+              400,
+              401,
+              402,
+              403,
+              404,
+              405,
+              406,
+              407,
+              408,
+              409,
+              410,
+              411,
+              412,
+              413,
+              414,
+              415,
+              416,
+              417,
+              418,
+              419,
+              420,
+              421,
+              422,
+              423,
+              424,
+              425,
+              426,
+              427,
+              428,
+              429,
+              430,
+              431,
+              432,
+              433,
+              434,
+              435,
+              436,
+              437,
+              438,
+              439,
+              440,
+              441,
+              442,
+              443,
+              444,
+              445,
+              446,
+              447,
+              448,
+              449,
+              450,
+              451,
+              452,
+              453,
+              454,
+              455,
+              456,
+              457,
+              458,
+              459,
+              460,
+              461,
+              462,
+              463,
+              464,
+              465,
+              466,
+              467,
+              468,
+              469,
+              470,
+              471,
+              472,
+              473,
+              474,
+              475,
+              476,
+              477,
+              478,
+              479,
+              480,
+              481,
+              482,
+              483,
+              484,
+              485,
+              486,
+              487,
+              488,
+              489,
+              490,
+              491,
+              492,
+              493,
+              494,
+              495,
+              496,
+              497,
+              498,
+              499,
+              500,
+              501,
+              502,
+              503,
+              504,
+              505,
+              506,
+              507,
+              508,
+              509,
+              510,
+              511,
+              512,
+              513,
+              514,
+              515,
+              516,
+              517,
+              518,
+              519,
+              520,
+              521,
+              522,
+              523,
+              524,
+              525,
+              526,
+              527,
+              528,
+              529,
+              530,
+              531,
+              532,
+              533,
+              534,
+              535,
+              536,
+              537,
+              538,
+              539,
+              540,
+              541,
+              542,
+              543,
+              544,
+              545,
+              546,
+              547,
+              548,
+              549,
+              550,
+              551,
+              552,
+              553,
+              554,
+              555,
+              556,
+              557,
+              558,
+              559,
+              560,
+              561,
+              562,
+              563,
+              564,
+              565,
+              566,
+              567,
+              568,
+              569,
+              570,
+              571,
+              572,
+              573,
+              574,
+              575,
+              576,
+              577,
+              578,
+              579,
+              580,
+              581,
+              582,
+              583,
+              584,
+              585,
+              586,
+              587,
+              588,
+              589,
+              590,
+              591,
+              592,
+              593,
+              594,
+              595,
+              596,
+              597,
+              598,
+              599,
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619,
+              620,
+              621,
+              622,
+              623,
+              624,
+              625,
+              626,
+              627,
+              628,
+              629,
+              630,
+              631,
+              632,
+              633,
+              634,
+              635,
+              636,
+              637,
+              638,
+              639,
+              640,
+              641,
+              642,
+              643,
+              644,
+              645,
+              646,
+              647,
+              648,
+              649,
+              650,
+              651,
+              652,
+              653,
+              654,
+              655,
+              656,
+              657,
+              658,
+              659,
+              660,
+              661,
+              662,
+              663,
+              664,
+              665,
+              666,
+              667,
+              668,
+              669,
+              670,
+              671,
+              672,
+              673,
+              674,
+              675,
+              676,
+              677,
+              678,
+              679,
+              680,
+              681,
+              682,
+              683,
+              684,
+              685,
+              686,
+              687,
+              688,
+              689,
+              690,
+              691,
+              692,
+              693,
+              694,
+              695,
+              696,
+              697,
+              698,
+              699,
+              700,
+              701,
+              702,
+              703,
+              704,
+              705,
+              706,
+              707,
+              708,
+              709,
+              710,
+              711,
+              712,
+              713,
+              714,
+              715,
+              716,
+              717,
+              718,
+              719,
+              720,
+              721,
+              722,
+              723,
+              724,
+              725,
+              726,
+              727,
+              728,
+              729,
+              730,
+              731,
+              732,
+              733,
+              734,
+              735,
+              736,
+              737,
+              738,
+              739,
+              740,
+              741,
+              742,
+              743,
+              744,
+              745,
+              746,
+              747,
+              748,
+              749,
+              750,
+              751,
+              752,
+              753,
+              754,
+              755,
+              756,
+              757,
+              758,
+              759,
+              760,
+              761,
+              762,
+              763,
+              764,
+              765,
+              766,
+              767,
+              768,
+              769,
+              770,
+              771,
+              772,
+              773,
+              774,
+              775,
+              776,
+              777,
+              778,
+              779,
+              780,
+              781,
+              782,
+              783,
+              784,
+              785,
+              786,
+              787,
+              788,
+              789,
+              790,
+              791,
+              792,
+              793,
+              794,
+              795,
+              796,
+              797,
+              798,
+              799,
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819,
+              820,
+              821,
+              822,
+              823,
+              824,
+              825,
+              826,
+              827,
+              828,
+              829,
+              830,
+              831,
+              832,
+              833,
+              834,
+              835,
+              836,
+              837,
+              838,
+              839,
+              840,
+              841,
+              842,
+              843,
+              844,
+              845,
+              846,
+              847,
+              848,
+              849,
+              850,
+              851,
+              852,
+              853,
+              854,
+              855,
+              856,
+              857,
+              858,
+              859,
+              860,
+              861,
+              862,
+              863,
+              864,
+              865,
+              866,
+              867,
+              868,
+              869,
+              870,
+              871,
+              872,
+              873,
+              874,
+              875,
+              876,
+              877,
+              878,
+              879,
+              880,
+              881,
+              882,
+              883,
+              884,
+              885,
+              886,
+              887,
+              888,
+              889,
+              890,
+              891,
+              892,
+              893,
+              894,
+              895,
+              896,
+              897,
+              898,
+              899,
+              900,
+              901,
+              902,
+              903,
+              904,
+              905,
+              906,
+              907,
+              908,
+              909,
+              910,
+              911,
+              912,
+              913,
+              914,
+              915,
+              916,
+              917,
+              918,
+              919,
+              920,
+              921,
+              922,
+              923,
+              924,
+              925,
+              926,
+              927,
+              928,
+              929,
+              930,
+              931,
+              932,
+              933,
+              934,
+              935,
+              936,
+              937,
+              938,
+              939,
+              940,
+              941,
+              942,
+              943,
+              944,
+              945,
+              946,
+              947,
+              948,
+              949,
+              950,
+              951,
+              952,
+              953,
+              954,
+              955,
+              956,
+              957,
+              958,
+              959,
+              960,
+              961,
+              962,
+              963,
+              964,
+              965,
+              966,
+              967,
+              968,
+              969,
+              970,
+              971,
+              972,
+              973,
+              974,
+              975,
+              976,
+              977,
+              978,
+              979,
+              980,
+              981,
+              982,
+              983,
+              984,
+              985,
+              986,
+              987,
+              988,
+              989,
+              990,
+              991,
+              992,
+              993,
+              994,
+              995,
+              996,
+              997,
+              998,
+              999
+            ],
+            "size_bytes": 12582912
+          }
+        ],
+        "cores": [
+          {
+            "cluster_id": null,
+            "core_id": 0,
+            "die_id": 0,
+            "index": 0,
+            "kind": "uniform",
+            "logical_cpus": [
+              0,
+              1
+            ],
+            "max_frequency_khz": 4800000
+          },
+          {
+            "cluster_id": null,
+            "core_id": 4,
+            "die_id": 0,
+            "index": 1,
+            "kind": "uniform",
+            "logical_cpus": [
+              2,
+              3
+            ],
+            "max_frequency_khz": 4800000
+          },
+          {
+            "cluster_id": null,
+            "core_id": 8,
+            "die_id": 0,
+            "index": 2,
+            "kind": "uniform",
+            "logical_cpus": [
+              4,
+              5
+            ],
+            "max_frequency_khz": 4800000
+          },
+          {
+            "cluster_id": null,
+            "core_id": 12,
+            "die_id": 0,
+            "index": 3,
+            "kind": "uniform",
+            "logical_cpus": [
+              6,
+              7
+            ],
+            "max_frequency_khz": 4800000
+          },
+          {
+            "cluster_id": null,
+            "core_id": 16,
+            "die_id": 0,
+            "index": 4,
+            "kind": "uniform",
+            "logical_cpus": [
+              8,
+              9
+            ],
+            "max_frequency_khz": 4800000
+          },
+          {
+            "cluster_id": null,
+            "core_id": 20,
+            "die_id": 0,
+            "index": 5,
+            "kind": "uniform",
+            "logical_cpus": [
+              10,
+              11
+            ],
+            "max_frequency_khz": 4800000
+          },
+          {
+            "cluster_id": null,
+            "core_id": 24,
+            "die_id": 0,
+            "index": 6,
+            "kind": "uniform",
+            "logical_cpus": [
+              12,
+              13
+            ],
+            "max_frequency_khz": 4800000
+          },
+          {
+            "cluster_id": null,
+            "core_id": 28,
+            "die_id": 0,
+            "index": 7,
+            "kind": "uniform",
+            "logical_cpus": [
+              14,
+              15
+            ],
+            "max_frequency_khz": 4800000
+          }
+        ],
+        "discovered_at": 1800000000,
+        "family": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/cpuinfo",
+          "value": 23
+        },
+        "flags": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/cpuinfo",
+          "value": [
+            "fpu",
+            "vme",
+            "sse",
+            "sse2",
+            "avx2"
+          ]
+        },
+        "hybrid": {
+          "availability": "detected",
+          "confidence": "inferred",
+          "source": "core types",
+          "value": false
+        },
+        "logical_processors": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/devices/system/cpu/online",
+          "value": 16
+        },
+        "max_frequency_khz": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "notes": "the frequency driver's current limit; it can change with boost and power settings",
+          "source": "/sys/devices/system/cpu/cpu*/cpufreq",
+          "value": 4800000
+        },
+        "microarchitecture": {
+          "availability": "detected",
+          "confidence": "inferred",
+          "notes": "derived from family and model numbers",
+          "source": "CPUID family/model table",
+          "value": "Zen 2"
+        },
+        "min_frequency_khz": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "notes": "the frequency driver's current limit; it can change with boost and power settings",
+          "source": "/sys/devices/system/cpu/cpu*/cpufreq",
+          "value": 400000
+        },
+        "model": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/cpuinfo",
+          "value": 104
+        },
+        "model_name": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/cpuinfo",
+          "value": "Example AMD 8-Core Processor"
+        },
+        "offline_cpus": [],
+        "package_id": 0,
+        "physical_cores": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/devices/system/cpu/cpu*/topology",
+          "value": 8
+        },
+        "stepping": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/cpuinfo",
+          "value": 2
+        },
+        "vendor": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/cpuinfo",
+          "value": "AMD"
+        },
+        "vendor_id": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/proc/cpuinfo",
+          "value": "AuthenticAMD"
+        }
+      }
+    ],
+    "root_override": "fixture:amd-laptop",
+    "schema_version": 2,
+    "sensors": [
+      {
+        "access": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/sys/class/hwmon/hwmon0/temp1_input",
+          "value": "readable"
+        },
+        "chip": "examplecpu",
+        "device": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "notes": "the device providing the sensor, not necessarily what it measures",
+          "source": "/sys/class/hwmon/hwmon0/device",
+          "value": "PCI 0000:00:18.3"
+        },
+        "discovered_at": 1800000000,
+        "id": "hwmon0/temp1",
+        "input_path": "/sys/class/hwmon/hwmon0/temp1_input",
+        "kind": "temperature",
+        "label": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/hwmon/hwmon0/temp1_label",
+          "value": "Tctl"
+        }
+      },
+      {
+        "access": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/sys/class/hwmon/hwmon1/temp1_input",
+          "value": "readable"
+        },
+        "chip": "nvme",
+        "device": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "notes": "the device providing the sensor, not necessarily what it measures",
+          "source": "/sys/class/hwmon/hwmon1/device",
+          "value": "PCI 0000:01:00.0"
+        },
+        "discovered_at": 1800000000,
+        "id": "hwmon1/temp1",
+        "input_path": "/sys/class/hwmon/hwmon1/temp1_input",
+        "kind": "temperature",
+        "label": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/hwmon/hwmon1/temp1_label",
+          "value": "Composite"
+        }
+      },
+      {
+        "access": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/sys/class/hwmon/hwmon1/temp2_input",
+          "value": "readable"
+        },
+        "chip": "nvme",
+        "device": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "notes": "the device providing the sensor, not necessarily what it measures",
+          "source": "/sys/class/hwmon/hwmon1/device",
+          "value": "PCI 0000:01:00.0"
+        },
+        "discovered_at": 1800000000,
+        "id": "hwmon1/temp2",
+        "input_path": "/sys/class/hwmon/hwmon1/temp2_input",
+        "kind": "temperature",
+        "label": {
+          "availability": "unavailable",
+          "confidence": "unknown",
+          "notes": "the driver gives no label"
+        }
+      }
+    ],
+    "storage": [
+      {
+        "capacity_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/dm-0/size",
+          "value": 510976000000
+        },
+        "controller_pci_address": null,
+        "device_path": "/dev/dm-0",
+        "discovered_at": 1800000000,
+        "firmware_revision": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "virtual device",
+          "source": "/sys/block/dm-0/device/rev"
+        },
+        "interface": {
+          "availability": "detected",
+          "confidence": "inferred",
+          "notes": "from the device's position in the kernel device tree",
+          "source": "/sys/block/dm-0",
+          "value": "virtual"
+        },
+        "kind": "virtual",
+        "logical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/dm-0/queue/logical_block_size",
+          "value": 512
+        },
+        "mapper_name": "cryptroot",
+        "mapper_path": "/dev/mapper/cryptroot",
+        "model": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "virtual device",
+          "source": "/sys/block/dm-0/device/model"
+        },
+        "name": "dm-0",
+        "partitions": [],
+        "physical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/dm-0/queue/physical_block_size",
+          "value": 512
+        },
+        "read_only": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/dm-0/ro",
+          "value": false
+        },
+        "removable": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/dm-0/removable",
+          "value": false
+        },
+        "rotational": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/dm-0/queue/rotational",
+          "value": false
+        },
+        "slaves": [
+          "nvme0n1p2"
+        ],
+        "sysfs_path": "/sys/devices/virtual/block/dm-0",
+        "usage": {
+          "holders": [],
+          "mounts": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "notes": "mount table at scan time",
+            "source": "/proc/mounts",
+            "value": [
+              {
+                "fs_type": "ext4",
+                "mount_point": "/",
+                "read_only": false
+              }
+            ]
+          },
+          "swap": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "source": "/proc/swaps",
+            "value": false
+          }
+        },
+        "vendor": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "virtual device",
+          "source": "/sys/block/dm-0/device/vendor"
+        }
+      },
+      {
+        "capacity_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/loop1/size",
+          "value": 102400000
+        },
+        "controller_pci_address": null,
+        "device_path": "/dev/loop1",
+        "discovered_at": 1800000000,
+        "firmware_revision": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "virtual device",
+          "source": "/sys/block/loop1/device/rev"
+        },
+        "interface": {
+          "availability": "detected",
+          "confidence": "inferred",
+          "notes": "from the device's position in the kernel device tree",
+          "source": "/sys/block/loop1",
+          "value": "virtual"
+        },
+        "kind": "virtual",
+        "logical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/loop1/queue/logical_block_size",
+          "value": 512
+        },
+        "mapper_name": null,
+        "mapper_path": null,
+        "model": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "virtual device",
+          "source": "/sys/block/loop1/device/model"
+        },
+        "name": "loop1",
+        "partitions": [],
+        "physical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/loop1/queue/physical_block_size",
+          "value": 512
+        },
+        "read_only": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/loop1/ro",
+          "value": false
+        },
+        "removable": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/loop1/removable",
+          "value": false
+        },
+        "rotational": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/loop1/queue/rotational",
+          "value": false
+        },
+        "slaves": [],
+        "sysfs_path": "/sys/devices/virtual/block/loop1",
+        "usage": {
+          "holders": [],
+          "mounts": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "notes": "mount table at scan time",
+            "source": "/proc/mounts",
+            "value": []
+          },
+          "swap": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "source": "/proc/swaps",
+            "value": false
+          }
+        },
+        "vendor": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "virtual device",
+          "source": "/sys/block/loop1/device/vendor"
+        }
+      },
+      {
+        "capacity_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/nvme0n1/size",
+          "value": 512110190592
+        },
+        "controller_pci_address": "0000:01:00.0",
+        "device_path": "/dev/nvme0n1",
+        "discovered_at": 1800000000,
+        "firmware_revision": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/sys/block/nvme0n1/device/firmware_rev",
+          "value": "EXFW01"
+        },
+        "interface": {
+          "availability": "detected",
+          "confidence": "inferred",
+          "notes": "from the device's position in the kernel device tree",
+          "source": "/sys/block/nvme0n1",
+          "value": "nvme"
+        },
+        "kind": "ssd",
+        "logical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/nvme0n1/queue/logical_block_size",
+          "value": 512
+        },
+        "mapper_name": null,
+        "mapper_path": null,
+        "model": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/sys/block/nvme0n1/device/model",
+          "value": "Example NVMe 512GB"
+        },
+        "name": "nvme0n1",
+        "partitions": [
+          {
+            "device_path": "/dev/nvme0n1p1",
+            "name": "nvme0n1p1",
+            "number": 1,
+            "read_only": false,
+            "size_bytes": 536870912,
+            "start_sector": 2048,
+            "usage": {
+              "holders": [],
+              "mounts": {
+                "availability": "detected",
+                "confidence": "kernel_reported",
+                "notes": "mount table at scan time",
+                "source": "/proc/mounts",
+                "value": [
+                  {
+                    "fs_type": "vfat",
+                    "mount_point": "/boot/efi",
+                    "read_only": true
+                  }
+                ]
+              },
+              "swap": {
+                "availability": "detected",
+                "confidence": "kernel_reported",
+                "source": "/proc/swaps",
+                "value": false
+              }
+            }
+          },
+          {
+            "device_path": "/dev/nvme0n1p2",
+            "name": "nvme0n1p2",
+            "number": 2,
+            "read_only": false,
+            "size_bytes": 511488000000,
+            "start_sector": 2048,
+            "usage": {
+              "holders": [
+                "dm-0"
+              ],
+              "mounts": {
+                "availability": "detected",
+                "confidence": "kernel_reported",
+                "notes": "mount table at scan time",
+                "source": "/proc/mounts",
+                "value": []
+              },
+              "swap": {
+                "availability": "detected",
+                "confidence": "kernel_reported",
+                "source": "/proc/swaps",
+                "value": false
+              }
+            }
+          }
+        ],
+        "physical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/nvme0n1/queue/physical_block_size",
+          "value": 512
+        },
+        "read_only": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/nvme0n1/ro",
+          "value": false
+        },
+        "removable": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/nvme0n1/removable",
+          "value": false
+        },
+        "rotational": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/nvme0n1/queue/rotational",
+          "value": false
+        },
+        "slaves": [],
+        "sysfs_path": "/sys/devices/pci0000:00/0000:00:02.4/0000:01:00.0/nvme/nvme0/nvme0n1",
+        "usage": {
+          "holders": [],
+          "mounts": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "notes": "mount table at scan time",
+            "source": "/proc/mounts",
+            "value": []
+          },
+          "swap": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "source": "/proc/swaps",
+            "value": false
+          }
+        },
+        "vendor": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/block/nvme0n1/device/vendor"
+        }
+      },
+      {
+        "capacity_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/sda/size",
+          "value": 32010928128
+        },
+        "controller_pci_address": "0000:03:00.3",
+        "device_path": "/dev/sda",
+        "discovered_at": 1800000000,
+        "firmware_revision": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/block/sda/device/rev"
+        },
+        "interface": {
+          "availability": "detected",
+          "confidence": "inferred",
+          "notes": "from the device's position in the kernel device tree",
+          "source": "/sys/block/sda",
+          "value": "usb"
+        },
+        "kind": "flash",
+        "logical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/sda/queue/logical_block_size",
+          "value": 512
+        },
+        "mapper_name": null,
+        "mapper_path": null,
+        "model": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/sys/block/sda/device/model",
+          "value": "Example Flash"
+        },
+        "name": "sda",
+        "partitions": [
+          {
+            "device_path": "/dev/sda1",
+            "name": "sda1",
+            "number": 1,
+            "read_only": false,
+            "size_bytes": 32009879552,
+            "start_sector": 2048,
+            "usage": {
+              "holders": [],
+              "mounts": {
+                "availability": "detected",
+                "confidence": "kernel_reported",
+                "notes": "mount table at scan time",
+                "source": "/proc/mounts",
+                "value": [
+                  {
+                    "fs_type": "vfat",
+                    "mount_point": "/media/fixture/EXAMPLE STICK",
+                    "read_only": false
+                  }
+                ]
+              },
+              "swap": {
+                "availability": "detected",
+                "confidence": "kernel_reported",
+                "source": "/proc/swaps",
+                "value": false
+              }
+            }
+          }
+        ],
+        "physical_sector_bytes": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/sda/queue/physical_block_size",
+          "value": 512
+        },
+        "read_only": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/sda/ro",
+          "value": false
+        },
+        "removable": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/block/sda/removable",
+          "value": true
+        },
+        "rotational": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "notes": "USB bridges sometimes report this incorrectly",
+          "source": "/sys/block/sda/queue/rotational",
+          "value": false
+        },
+        "slaves": [],
+        "sysfs_path": "/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-1/1-1:1.0/host0/target0:0:0/0:0:0:0/block/sda",
+        "usage": {
+          "holders": [],
+          "mounts": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "notes": "mount table at scan time",
+            "source": "/proc/mounts",
+            "value": []
+          },
+          "swap": {
+            "availability": "detected",
+            "confidence": "kernel_reported",
+            "source": "/proc/swaps",
+            "value": false
+          }
+        },
+        "vendor": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/block/sda/device/vendor"
+        }
+      }
+    ],
+    "system": {
+      "architecture": {
+        "availability": "detected",
+        "confidence": "kernel_reported",
+        "source": "/proc/sys/kernel/arch",
+        "value": "x86_64"
+      },
+      "chassis": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/chassis_type",
+        "value": "laptop"
+      },
+      "discovered_at": 1800000000,
+      "kernel_release": {
+        "availability": "detected",
+        "confidence": "kernel_reported",
+        "source": "/proc/sys/kernel/osrelease",
+        "value": "6.8.0-fixture"
+      },
+      "kernel_version": {
+        "availability": "detected",
+        "confidence": "kernel_reported",
+        "source": "/proc/sys/kernel/version",
+        "value": "#1 SMP PREEMPT_DYNAMIC fixture"
+      },
+      "manufacturer": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/sys_vendor",
+        "value": "Example Corp"
+      },
+      "os": {
+        "id": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/etc/os-release",
+          "value": "ubuntu"
+        },
+        "id_like": [
+          "debian"
+        ],
+        "name": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/etc/os-release",
+          "value": "Ubuntu"
+        },
+        "pretty_name": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/etc/os-release",
+          "value": "Ubuntu 24.04 LTS"
+        },
+        "version": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/etc/os-release",
+          "value": "24.04 LTS (Noble Numbat)"
+        },
+        "version_id": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/etc/os-release",
+          "value": "24.04"
+        }
+      },
+      "product_family": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/product_family",
+        "value": "Example Series"
+      },
+      "product_name": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/product_name",
+        "value": "Example Book 14 AMD"
+      },
+      "product_sku": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/product_sku",
+        "value": "EX-SKU-1"
+      },
+      "product_version": {
+        "availability": "detected",
+        "confidence": "firmware_reported",
+        "source": "/sys/class/dmi/id/product_version",
+        "value": "1.0"
+      }
+    },
+    "thermal_zones": [
+      {
+        "access": {
+          "availability": "detected",
+          "confidence": "direct",
+          "source": "/sys/class/thermal/thermal_zone0/temp",
+          "value": "readable"
+        },
+        "discovered_at": 1800000000,
+        "name": "thermal_zone0",
+        "trip_points": 1,
+        "zone_type": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/class/thermal/thermal_zone0/type",
+          "value": "acpitz"
+        }
+      }
+    ],
+    "usb_devices": [
+      {
+        "bus": 1,
+        "class_name": "Defined per interface",
+        "controller_pci_address": null,
+        "device_class": 0,
+        "device_number": 2,
+        "discovered_at": 1800000000,
+        "interface_classes": [
+          "Mass storage"
+        ],
+        "is_hub": false,
+        "is_root_hub": false,
+        "manufacturer": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/bus/usb/devices/1-1/manufacturer",
+          "value": "ExampleStorage"
+        },
+        "parent": "usb1",
+        "port_number": 1,
+        "ports": [],
+        "product": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/bus/usb/devices/1-1/product",
+          "value": "Example Flash"
+        },
+        "product_id": 21889,
+        "product_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/usb.ids",
+          "value": "Example Flash Drive"
+        },
+        "removable": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/usb/devices/1-1/removable",
+          "value": "removable"
+        },
+        "speed_kbps": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/usb/devices/1-1/speed",
+          "value": 480000
+        },
+        "sysfs_name": "1-1",
+        "sysfs_path": "/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-1",
+        "usb_version": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/bus/usb/devices/1-1/version",
+          "value": "3.20"
+        },
+        "vendor_id": 1921,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/usb.ids",
+          "value": "Example Storage Vendor"
+        }
+      },
+      {
+        "bus": 1,
+        "class_name": "Hub",
+        "controller_pci_address": "0000:03:00.3",
+        "device_class": 9,
+        "device_number": 1,
+        "discovered_at": 1800000000,
+        "interface_classes": [
+          "Hub"
+        ],
+        "is_hub": true,
+        "is_root_hub": true,
+        "manufacturer": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/bus/usb/devices/usb1/manufacturer"
+        },
+        "parent": null,
+        "port_number": null,
+        "ports": [
+          {
+            "connect_type": "hotplug",
+            "device": "1-1",
+            "number": 1
+          },
+          {
+            "connect_type": "hotplug",
+            "device": null,
+            "number": 2
+          }
+        ],
+        "product": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/bus/usb/devices/usb1/product",
+          "value": "xHCI Host Controller"
+        },
+        "product_id": 2,
+        "product_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/usb.ids",
+          "value": "2.0 root hub"
+        },
+        "removable": {
+          "availability": "unsupported",
+          "confidence": "unknown",
+          "notes": "not provided by this system",
+          "source": "/sys/bus/usb/devices/usb1/removable"
+        },
+        "speed_kbps": {
+          "availability": "detected",
+          "confidence": "kernel_reported",
+          "source": "/sys/bus/usb/devices/usb1/speed",
+          "value": 480000
+        },
+        "sysfs_name": "usb1",
+        "sysfs_path": "/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1",
+        "usb_version": {
+          "availability": "detected",
+          "confidence": "firmware_reported",
+          "source": "/sys/bus/usb/devices/usb1/version",
+          "value": "2.00"
+        },
+        "vendor_id": 7531,
+        "vendor_name": {
+          "availability": "detected",
+          "confidence": "database",
+          "source": "/usr/share/hwdata/usb.ids",
+          "value": "Linux Foundation"
+        }
+      }
+    ]
+  }
+}
