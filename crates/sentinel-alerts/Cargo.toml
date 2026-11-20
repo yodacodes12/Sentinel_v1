@@ -1,0 +1,17 @@
+[package]
+name = "sentinel-alerts"
+description = "Alert rules, evaluation, health indicators and desktop notifications for Sentinel"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sentinel-config.workspace = true
+sentinel-telemetry.workspace = true
+
+[dev-dependencies]
+rustix.workspace = true

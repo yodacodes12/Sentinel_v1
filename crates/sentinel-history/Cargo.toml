@@ -1,0 +1,20 @@
+[package]
+name = "sentinel-history"
+description = "Local telemetry and alert history with retention for Sentinel"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sentinel-core.workspace = true
+sentinel-config.workspace = true
+sentinel-telemetry.workspace = true
+rusqlite.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
